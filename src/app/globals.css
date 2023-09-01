@@ -1,0 +1,74 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+.card {
+  color: #f1f3f9;
+  background: #DC0A2D;
+  padding: 1rem;
+  border-radius: 8px;
+  border: 2px solid #020203;
+  width: 350px;
+  max-width: 90vw;
+  height: fit-content;
+}
+
+.card h2 {
+  font-size: 32px;
+  margin: 8px 0;
+  text-transform: capitalize;
+}
+
+.card h3 {
+  margin: 0;
+  font-size: 16px;
+}
+
+.card ul {
+  padding-inline-start: 2rem;
+}
+
+.card li {
+  text-transform: capitalize;
+  margin: 8px 0;
+}
+
+.cardImage {
+  background: #8DB9DC;
+  border-radius: 6px;
+  box-shadow: inset 0px 0px 0px 16px #FFFFFF;
+}
+
+.description {
+  font-size: 1rem;
+  line-height: 40px;
+}
+
+.pokemones li a {
+  display: block;
+  margin: 16px 0;
+}
